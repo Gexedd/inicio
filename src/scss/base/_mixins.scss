@@ -1,0 +1,38 @@
+@use "variables" as v;
+
+// @mixin heading($color:white )//Es un color default
+//  {
+//     text-transform: uppercase;
+//     font-size:4rem;
+//     color: $color;
+//     letter-spacing: 1px;
+// }
+// @mixin parrafo {
+//     font-family: Roboto;
+//     color:red;
+    
+// }
+
+@mixin telefono{
+    @media (v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (v.$desktop) {
+        @content;
+    }
+}
+
+@mixin desktopxl{
+    @media (v.$desktopXL) {
+        @content;
+    }
+}
